@@ -1,4 +1,10 @@
 # Logs
+.gitignore
+PROJECT ASSIGNMENT/Index 2.html
+PROJECT ASSIGNMENT/Index.html
+PROJECT ASSIGNMENT/style.css
+PROJECT ASSIGNMENT/Frame 37.png
+PROJECT ASSIGNMENT/Logo.png
 logs
 *.log
 npm-debug.log*
