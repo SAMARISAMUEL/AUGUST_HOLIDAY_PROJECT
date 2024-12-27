@@ -1,0 +1,359 @@
+<!--  My transactions page -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <title>My Transaction</title>
+
+    <!-- Google fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=person"
+    />
+
+    <!-- Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- AOS animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+
+  <body class="h-screen flex flex-row">
+    <!-- Nav -->
+    <nav class="bg-cryp_deepblue p-4 space-y-20 w-[312px] h-screen ">
+      <!-- logo -->
+      <div>
+        <img
+          src="../crypto_img/whitelogo.png"
+          alt="Dagcoin logo"
+          width="173px"
+          height="56px"
+        />
+      </div>
+
+      <!-- nav items -->
+      <ul class="text-cryp_muted_blue capitalize space-y-5 text-lg">
+        <!-- Home -->
+        <div class="flex items-center space-x-3 my-2">
+          <i class="bx bx-home-alt-2" style="color: #fff"></i>
+          <li class="text-white"><a href="#"></a>home</li>
+        </div>
+
+        <!-- Transaction -->
+        <div class="flex items-center space-x-3 my-2">
+          <i class="bx bx-list-ul" style="color: #648cff"></i>
+          <li><a href="#"></a>transactions</li>
+        </div>
+
+        <!-- Address book -->
+        <div class="flex items-center space-x-3 my-2">
+          <i class="bx bxs-user-pin" style="color: #648cff"></i>
+          <li><a href="#"></a>address book</li>
+        </div>
+
+        <!-- Share profile -->
+        <div class="flex items-center space-x-3 my-2">
+          <i class="bx bxs-share-alt" style="color: #648cff"></i>
+          <li><a href="#"></a>share my profile</li>
+        </div>
+
+        <!-- Get coins -->
+        <div class="flex items-center space-x-3 my-2">
+          <i class="bx bxs-coin-stack" style="color: #648cff"></i>
+          <li><a href="#"></a>get coins</li>
+        </div>
+
+        <!-- ATM loyalty -->
+        <div class="flex items-center space-x-3 my-2">
+          <i class="bx bxs-bank" style="color: #648cff"></i>
+          <li><a href="#"></a>atm loyalty</li>
+        </div>
+
+        <!-- Merchant finder -->
+        <div class="flex items-center space-x-3 my-2">
+          <i class="bx bx-clipboard" style="color: #648cff"></i>
+          <li><a href="#"></a>merchant finder</li>
+        </div>
+
+        <!-- Customer support -->
+        <div class="flex items-center space-x-3 my-2">
+          <i class="bx bx-support" style="color: #648cff"></i>
+          <li><a href="#"></a>Customer support</li>
+        </div>
+      </ul>
+
+      <!-- wallet -->
+      <div
+        data-aos="zoom-in-up"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="1800"
+        class="flex items-center justify-center bg-cryp_muted_white w-[252px] h-[74px] rounded-3xl space-x-4"
+      >
+        <div class="flex items-center text-white space-x-3">
+          <i class="bx bx-wallet text-2xl" style="color: #fff"></i>
+          <p class="text-white capitalize">henry's wallet</p>
+        </div>
+        <!-- chevron-up -->
+        <span>
+          <i class="bx bxs-chevron-up text-white text-xl"></i>
+        </span>
+      </div>
+    </nav>
+
+    <main class="flex-grow bg-cryp_blue px-20 h-screen overflow-auto">
+      <section class="justify-center items-center m-auto flex flex-col">
+        <!-- Top  -->
+        <div class="flex items-center justify-center gap-96 mt-8">
+          <!-- left arrow icon -->
+          <span>
+            <i class="bx bx-arrow-back text-white text-xl"></i>
+          </span>
+
+          <h1 class="capitalize text-white text-xl">transaction</h1>
+
+          <!-- slider icon -->
+          <span><i class='bx bx-slider text-white text-xl' ></i></span>
+        </div>
+
+        <!-- white section -->
+        <div class="flex items-center justify-center">
+          <div class="bg-white mt-12 w-[1066px] h-[930px]">
+            <!-- search -->
+            <div class="bg-cryp_deepblue space-x-10 rounded-b-2xl py-2">
+              <!-- search icon -->
+              <span
+                ><i class="bx bx-search ml-4" style="color: #ffffff"></i
+              ></span>
+              <input
+                type="text"
+                placeholder="Search contact"
+                class="bg-cryp_deepblue w-9/12 text-white"
+              />
+            </div>
+
+            <!-- recent transaction -->
+            <div
+              class="flex border-b-2 border-b-cryp_muted justify-between items-center py-4"
+            >
+              <p class="capitalize text-cryp_darkblue w-[533px] text-center">
+                recent transactions
+              </p>
+              <p class="capitalize text-cryp_blue w-[533px] text-center">
+                Schedule payments
+              </p>
+            </div>
+
+            <div>
+              <!-- Green Arrow Section -->
+              <div class="flex border-b-2 py-4 items-center ml-4">
+                <span>
+                  <i class="bx bx-down-arrow-alt" style="color: #5cb816"></i>
+                </span>
+                <div class="flex flex-col pl-4">
+                  <p class="text-cryp_darkblue">23 Nov, 3:15PM</p>
+                  <div class="flex items-center">
+                    <p class="text-cryp_darkblue">+7,500.</p>
+                    <p class="text-cryp_grey ml-2">062000</p>
+                    <img
+                      src="../crypto_img/dagcoin_icon.png"
+                      alt="Dagcoin icon"
+                      class="ml-2"
+                      width="10px"
+                    />
+                  </div>
+                  <p class="text-cryp_darkblue">
+                    AACNGXR76IGUU3FAINLZDWXFFN7UGW
+                  </p>
+                </div>
+                <span class="ml-auto">
+                  <i class="bx bx-chevron-right" style="color: #3038e5"></i>
+                </span>
+              </div>
+            </div>
+            <div>
+              <!-- Green Arrow Section -->
+              <div class="flex border-b-2 py-4 items-center ml-4">
+                <span>
+                  <i class="bx bx-down-arrow-alt" style="color: #5cb816"></i>
+                </span>
+                <div class="flex flex-col pl-4">
+                  <p class="text-cryp_darkblue">23 Nov, 3:15PM</p>
+                  <div class="flex items-center">
+                    <p class="text-cryp_darkblue">+7,500.</p>
+                    <p class="text-cryp_grey ml-2">062000</p>
+                    <img
+                      src="../crypto_img/dagcoin_icon.png"
+                      alt="Dagcoin icon"
+                      class="ml-2"
+                      width="10px"
+                    />
+                  </div>
+                  <p class="text-cryp_darkblue">
+                    AACNGXR76IGUU3FAINLZDWXFFN7UGW
+                  </p>
+                </div>
+                <span class="ml-auto">
+                  <i class="bx bx-chevron-right" style="color: #3038e5"></i>
+                </span>
+              </div>
+            </div>
+            <div>
+              <!-- Green Arrow Section -->
+              <div class="flex border-b-2 py-4 items-center ml-4">
+                <span>
+                  <i class="bx bx-down-arrow-alt" style="color: #5cb816"></i>
+                </span>
+                <div class="flex flex-col pl-4">
+                  <p class="text-cryp_darkblue">23 Nov, 3:15PM</p>
+                  <div class="flex items-center">
+                    <p class="text-cryp_darkblue">+7,500.</p>
+                    <p class="text-cryp_grey ml-2">062000</p>
+                    <img
+                      src="../crypto_img/dagcoin_icon.png"
+                      alt="Dagcoin icon"
+                      class="ml-2"
+                      width="10px"
+                    />
+                  </div>
+                  <p class="text-cryp_darkblue">
+                    AACNGXR76IGUU3FAINLZDWXFFN7UGW
+                  </p>
+                </div>
+                <span class="ml-auto">
+                  <i class="bx bx-chevron-right" style="color: #3038e5"></i>
+                </span>
+              </div>
+            </div>
+            <div>
+              <!-- Green Arrow Section -->
+              <div class="flex border-b-2 py-4 items-center ml-4">
+                <span>
+                  <i class="bx bx-down-arrow-alt" style="color: #5cb816"></i>
+                </span>
+                <div class="flex flex-col pl-4">
+                  <p class="text-cryp_darkblue">23 Nov, 3:15PM</p>
+                  <div class="flex items-center">
+                    <p class="text-cryp_darkblue">+7,500.</p>
+                    <p class="text-cryp_grey ml-2">062000</p>
+                    <img
+                      src="../crypto_img/dagcoin_icon.png"
+                      alt="Dagcoin icon"
+                      class="ml-2"
+                      width="10px"
+                    />
+                  </div>
+                  <p class="text-cryp_darkblue">
+                    AACNGXR76IGUU3FAINLZDWXFFN7UGW
+                  </p>
+                </div>
+                <span class="ml-auto">
+                  <i class="bx bx-chevron-right" style="color: #3038e5"></i>
+                </span>
+              </div>
+            </div>
+            <div>
+              <!-- Green Arrow Section -->
+              <div class="flex border-b-2 py-4 items-center ml-4">
+                <span>
+                  <i class="bx bx-down-arrow-alt" style="color: #5cb816"></i>
+                </span>
+                <div class="flex flex-col pl-4">
+                  <p class="text-cryp_darkblue">23 Nov, 3:15PM</p>
+                  <div class="flex items-center">
+                    <p class="text-cryp_darkblue">+7,500.</p>
+                    <p class="text-cryp_grey ml-2">062000</p>
+                    <img
+                      src="../crypto_img/dagcoin_icon.png"
+                      alt="Dagcoin icon"
+                      class="ml-2"
+                      width="10px"
+                    />
+                  </div>
+                  <p class="text-cryp_darkblue">
+                    AACNGXR76IGUU3FAINLZDWXFFN7UGW
+                  </p>
+                </div>
+                <span class="ml-auto">
+                  <i class="bx bx-chevron-right" style="color: #3038e5"></i>
+                </span>
+              </div>
+            </div>
+            <div>
+              <!-- Green Arrow Section -->
+              <div class="flex border-b-2 py-4 items-center ml-4">
+                <span>
+                  <i class="bx bx-down-arrow-alt" style="color: #5cb816"></i>
+                </span>
+                <div class="flex flex-col pl-4">
+                  <p class="text-cryp_darkblue">23 Nov, 3:15PM</p>
+                  <div class="flex items-center">
+                    <p class="text-cryp_darkblue">+7,500.</p>
+                    <p class="text-cryp_grey ml-2">062000</p>
+                    <img
+                      src="../crypto_img/dagcoin_icon.png"
+                      alt="Dagcoin icon"
+                      class="ml-2"
+                      width="10px"
+                    />
+                  </div>
+                  <p class="text-cryp_darkblue">
+                    AACNGXR76IGUU3FAINLZDWXFFN7UGW
+                  </p>
+                </div>
+                <span class="ml-auto">
+                  <i class="bx bx-chevron-right" style="color: #3038e5"></i>
+                </span>
+              </div>
+            </div>
+            <div>
+              <!-- Green Arrow Section -->
+              <div class="flex border-b-2 py-4 items-center ml-4">
+                <span>
+                  <i class="bx bx-down-arrow-alt" style="color: #5cb816"></i>
+                </span>
+                <div class="flex flex-col pl-4">
+                  <p class="text-cryp_darkblue">23 Nov, 3:15PM</p>
+                  <div class="flex items-center">
+                    <p class="text-cryp_darkblue">+7,500.</p>
+                    <p class="text-cryp_grey ml-2">062000</p>
+                    <img
+                      src="../crypto_img/dagcoin_icon.png"
+                      alt="Dagcoin icon"
+                      class="ml-2"
+                      width="10px"
+                    />
+                  </div>
+                  <p class="text-cryp_darkblue">
+                    AACNGXR76IGUU3FAINLZDWXFFN7UGW
+                  </p>
+                </div>
+                <span class="ml-auto">
+                  <i class="bx bx-chevron-right" style="color: #3038e5"></i>
+                </span>
+              </div>
+
+              <!-- button div -->
+              <button
+                class="bg-gradient-to-b from-cryp_btn_bg1 to-cryp_btn_bg2 text-white w-10/12 h-[72px] text-xl capitalize rounded-3xl mt-3 justify-center items-center m-auto flex"
+              >
+                start new transaction
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- AOS animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
