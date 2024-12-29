@@ -11,6 +11,13 @@ module.exports = {
         color2: "#1217812E",
         color3: "#1D23A433",
         color4: "#9DA3F9",
+        btn_set_password: "#D9E0F64D",
+        btn_text_color: "#A5A7B34D",
+        div_text_color: "#9397B3",
+        right_text: "#ffffff3b",
+      },
+      fontFamily: {
+        Gothams: "Gothams",
       },
     },
   },

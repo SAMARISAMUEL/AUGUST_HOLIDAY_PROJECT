@@ -130,3 +130,5 @@ dist
 .pnp.*
 
 ./node_modules
+./src/Gotham-Font
+./src/images
