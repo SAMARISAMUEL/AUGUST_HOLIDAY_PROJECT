@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MAIN WALLET</title>
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="0"
+      height="0"
+      viewBox="0 0 24 24"
+    >
+      <path
+        fill="currentColor"
+        d="M12 4a4 4 0 0 1 4 4a4 4 0 0 1-4 4a4 4 0 0 1-4-4a4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4Z"
+      />
+    </svg>
+  </head>
+  <body class="lg:flex bg-[#001f8e]">
+    <div class="flex h-screen w-full lg:w-[20%] z-0 pb-6 rounded-xl">
+      <div class="ms-5">
+        <div class="flex items-center">
+          <!-- Brand Name -->
+          <div class="flex py-5 gap-3 items-center">
+            <div>
+              <img src="images/ON.png" alt="Logo" class="w-16 lg:w-10" />
+            </div>
+            <h1 class="text-white text-2xl text-0 font-bold italic">DAGCOIN</h1>
+          </div>
+          <!-- menu -->
+          <div
+            class="block lg:hidden text-[70px] relative left-[550px] text-white"
+          >
+            <i class="bx bx-menu"></i>
+          </div>
+        </div>
+        <!-- Navigation Links -->
+        <ul class="hidden lg:block mt-6">
+          <!-- Home Link -->
+          <div class="flex items-end mb-4">
+            <div>
+              <img
+                src="images/Change Icon Copy.png"
+                alt="change icon"
+                style="width: 20px"
+              />
+            </div>
+            <a href="#">
+              <li
+                class="text-[#648CFF] text-[12px] ms-3 font-light mt-3 tracking-wider"
+              >
+                Home
+              </li>
+            </a>
+          </div>
+
+          <!-- Transactions Link -->
+          <div class="flex items-end mb-4">
+            <div>
+              <img
+                src="images/Change Icon Copy 2.png"
+                alt="change icon 2"
+                style="width: 20px"
+                class=""
+              />
+            </div>
+            <a href="#">
+              <li
+                class="text-[#648CFF] text-[12px] ms-3 font-light mt-3 tracking-wider transition-all duration-300 hover:text-white"
+              >
+                Transactions
+              </li>
+            </a>
+          </div>
+
+          <!-- Address Book Link -->
+          <div class="flex items-end mb-4">
+            <div>
+              <img
+                src="images/Change Icon Copy 3.png"
+                alt="change icon 3"
+                class="w-5"
+              />
+            </div>
+            <a href="#">
+              <li
+                class="text-[#648CFF] text-[12px] ms-3 font-light mt-3 tracking-wider transition-all duration-300 hover:text-white"
+              >
+                Address Book
+              </li>
+            </a>
+          </div>
+
+          <!-- Share Profile Link -->
+          <div class="flex items-center mb-4">
+            <div>
+              <img
+                src="images/Change Icon Copy 4.png"
+                alt="change icon 4"
+                class="w-5"
+              />
+            </div>
+            <a href="#">
+              <li
+                class="text-[#648CFF] text-[12px] ms-3 font-light mt-3 tracking-wider transition-all duration-300 hover:text-white"
+              >
+                Share my Profile
+              </li>
+            </a>
+          </div>
+
+          <!-- Get Coin Link -->
+          <div class="flex items-center mb-4">
+            <div>
+              <img
+                src="images/Change Icon Copy 5.png"
+                alt="change icon 5"
+                class="w-5"
+              />
+            </div>
+            <a href="#">
+              <li
+                class="text-[#648CFF] text-[12px] ms-3 font-light mt-3 tracking-wider transition-all duration-300 hover:text-white"
+              >
+                Get Coin
+              </li>
+            </a>
+          </div>
+
+          <!-- ATM Loyalty Link -->
+          <div class="flex items-center mb-4">
+            <div>
+              <img src="images/Light blue.png" alt="Atm" class="w-5" />
+            </div>
+            <a href="#">
+              <li
+                class="text-[#648CFF] text-[12px] ms-3 font-light mt-3 tracking-wider transition-all duration-300 hover:text-white"
+              >
+                ATM Loyalty
+              </li>
+            </a>
+          </div>
+
+          <!-- Merchant Finder  -->
+          <div class="flex items-center mb-4">
+            <div>
+              <img
+                src="images/merchant.png"
+                alt="Merchant Finder"
+                class="w-5"
+              />
+            </div>
+            <a href="#">
+              <li
+                class="text-[#648CFF] text-[12px] ms-3 font-light mt-3 tracking-wider transition-all duration-300 hover:text-white"
+              >
+                Merchant finder
+              </li>
+            </a>
+          </div>
+
+          <!-- Customer Support -->
+          <div class="flex items-center">
+            <div>
+              <img
+                src="images/customer.png"
+                alt=" Customer Support"
+                class="w-5"
+              />
+            </div>
+            <a href="#">
+              <li
+                class="text-[#648CFF] text-[12px] ms-3 font-light tracking-wider transition-all duration-300 hover:text-white"
+              >
+                Customer support
+              </li>
+            </a>
+          </div>
+        </ul>
+
+        <!-- Active Wallet Section -->
+        <div
+          class="hidden lg:flex items-center justify-evenly w-[220px] bg-[#FFFFFF0D] rounded-xl relative top-20 cursor-pointer transition-all duration-300 mb-10"
+        >
+          <div class="flex items-center">
+            <div>
+              <i
+                class="bx bx-wallet text-2xl text-[#648CFF] transition-all duration-300 hover:text-white"
+              ></i>
+            </div>
+          </div>
+          <div class="p-0.5">
+            <h4
+              class="text-[#648CFF] transition-all duration-300 hover:text-white"
+            >
+              Active
+            </h4>
+            <h6
+              class="text-[#648CFF] transition-all duration-300 hover:text-white"
+            >
+              Henry's Wallet
+            </h6>
+          </div>
+          <span class="flex items-center"
+            ><i class="bx bx-chevron-up text-white"></i>
+          </span>
+        </div>
+      </div>
+
+      <div
+        class="bg-[#3038E5] text-white w-6 h-10 mt-72 ms-2 hidden lg:flex justify-center items-center rounded-bl-xl rounded-tl-xl"
+      >
+        <i class="bx bx-chevron-left"></i>
+      </div>
+    </div>
+    <!-- righ side -->
+    <div
+      class="lg:flex bg-[#3038E5] h-[100vh] relative bottom-[700px] md:bottom-[800px] lg:bottom-0 lg:py-6 w-[850px] lg:w-[100%]"
+    >
+      <div class="w-[90%] ms-20 lg:ms-32">
+        <div class="flex justify-normal">
+          <!-- introduction  -->
+          <div class="lg:flex mt-6 lg:mt-0">
+            <span class="text-white">Hey Stan,</span>
+            <p class="text-right_text ms-1 mt-4 lg:mt-0">
+              what do you want to do today?
+            </p>
+          </div>
+          <div class="flex ms-[350px] lg:ms-[450px] gap-1 mt-6 lg:mt-0">
+            <p class="text-white">€ 0.57</p>
+            <div class="w-6"><img src="images/ON.png" alt="Logo" /></div>
+          </div>
+        </div>
+        <!-- Your Balance -->
+        <div class="flex mt-4 text-white items-end gap-2">
+          <p>Your Balance</p>
+          <svg
+            viewBox="-0.5 -0.5 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            id="Refresh--Streamline-Unicons"
+            height="20"
+            width="20"
+          >
+            <desc>Refresh Streamline Icon: https://streamlinehq.com</desc>
+            <path
+              d="M13.313875 10.079875000000001h-3.3295625c-0.1949375 0 -0.3819375 0.07743749999999999 -0.51975 0.21525s-0.21525 0.32481250000000006 -0.21525 0.51975c0 0.19487500000000002 0.07743749999999999 0.38187499999999996 0.21525 0.5196875s0.32481250000000006 0.2153125 0.51975 0.2153125h1.764c-0.8108124999999999 0.8471875 -1.8563125 1.4326875000000001 -3.0023125 1.6811875 -1.146125 0.2485 -2.34025 0.148625 -3.429125 -0.28675 -1.0888125 -0.435375 -2.022625 -1.186375 -2.6813749999999996 -2.1565000000000003C1.9766875000000002 9.817625 1.6230625 8.6726875 1.62 7.5c0 -0.1949375 -0.07743749999999999 -0.38187499999999996 -0.21525 -0.5196875 -0.137875 -0.1378125 -0.32481250000000006 -0.2153125 -0.51975 -0.2153125s-0.38187499999999996 0.0775 -0.51975 0.2153125C0.22743750000000001 7.118124999999999 0.15 7.3050625 0.15 7.5c0.003875 1.4353125 0.42793749999999997 2.8380625 1.2198125 4.035125 0.7918749999999999 1.197125 1.9169375 2.13625 3.2363125 2.7013125 1.3193750000000002 0.565125 2.7753125 0.7315625000000001 4.1881875 0.47875 1.4129375 -0.25275 2.720875 -0.9136875 3.7624999999999997 -1.901125v1.3009375c0 0.1949375 0.07743749999999999 0.3819375 0.21525 0.51975s0.32481250000000006 0.21525 0.51975 0.21525c0.1949375 0 0.38187499999999996 -0.07743749999999999 0.5196875 -0.21525s0.2153125 -0.32481250000000006 0.2153125 -0.51975v-3.3075c-0.001875 -0.1899375 -0.0770625 -0.3716875 -0.21000000000000002 -0.507375 -0.13287500000000002 -0.1356875 -0.313125 -0.21462499999999998 -0.5029375 -0.22025ZM9.705 7.5c0 -0.4360625 -0.1293125 -0.8624375 -0.371625 -1.225 -0.24225 -0.36262500000000003 -0.5866875 -0.64525 -0.9894999999999999 -0.8121250000000001 -0.40293750000000006 -0.16693750000000002 -0.8463125 -0.21056249999999999 -1.2740624999999999 -0.1255 -0.4276875 0.0850625 -0.8206249999999999 0.2950625 -1.129 0.6034375000000001 -0.308375 0.308375 -0.518375 0.7013125 -0.6034375000000001 1.129 -0.0850625 0.42775 -0.0414375 0.8711249999999999 0.1255 1.2740624999999999 0.166875 0.40281249999999996 0.44949999999999996 0.74725 0.8121250000000001 0.9894999999999999 0.36256249999999995 0.2423125 0.7889375 0.371625 1.225 0.371625 0.58475 0 1.145625 -0.23231249999999998 1.5591875 -0.6458125000000001 0.4135 -0.41356249999999994 0.6458125000000001 -0.9744375 0.6458125000000001 -1.5591875Zm-2.94 0c0 -0.145375 0.043062500000000004 -0.2874375 0.12387499999999999 -0.408375 0.08075 -0.1208125 0.1955625 -0.21506250000000002 0.32987500000000003 -0.27068749999999997 0.13424999999999998 -0.055624999999999994 0.2820625 -0.0701875 0.42462500000000003 -0.0418125s0.273625 0.0983125 0.37637499999999996 0.20118750000000002c0.1028125 0.10275 0.17275 0.2336875 0.201125 0.3763125 0.028375 0.1425625 0.013812500000000002 0.290375 -0.0418125 0.4246875 -0.055624999999999994 0.13424999999999998 -0.149875 0.24906250000000002 -0.27068749999999997 0.32981249999999995 -0.1209375 0.0808125 -0.263 0.12387499999999999 -0.408375 0.12387499999999999 -0.1949375 0 -0.38187499999999996 -0.07743749999999999 -0.5196875 -0.21525s-0.2153125 -0.32481250000000006 -0.2153125 -0.51975ZM7.5 0.15C5.61575 0.15537499999999999 3.8055 0.8841875 2.4431875 2.1859375V0.885c0 -0.1949375 -0.07743749999999999 -0.38187499999999996 -0.21525 -0.51975C2.0900625 0.22743750000000001 1.903125 0.15 1.7081875 0.15s-0.38187499999999996 0.07743749999999999 -0.5196875 0.21525c-0.137875 0.137875 -0.2153125 0.32481250000000006 -0.2153125 0.51975v3.3075c0 0.1949375 0.07743749999999999 0.38187499999999996 0.2153125 0.51975 0.1378125 0.1378125 0.32475 0.21525 0.5196875 0.21525h3.3075c0.1949375 0 0.38187499999999996 -0.07743749999999999 0.51975 -0.21525 0.1378125 -0.137875 0.21525 -0.32481250000000006 0.21525 -0.51975s-0.07743749999999999 -0.38187499999999996 -0.21525 -0.51975c-0.137875 -0.1378125 -0.32481250000000006 -0.21525 -0.51975 -0.21525H3.2516875c0.8103125 -0.8468125 1.8552499999999998 -1.4321249999999999 3.0005625 -1.680875 1.145375 -0.24868749999999998 2.3389375 -0.1494375 3.4274375 0.28500000000000003 1.0885625 0.4345 2.0224375 1.184375 2.68175 2.153375 0.6593749999999999 0.969 1.014 2.113 1.0185625 3.285 0 0.1949375 0.0775 0.3819375 0.2153125 0.51975s0.32475 0.21525 0.5196875 0.21525c0.1949375 0 0.3819375 -0.07743749999999999 0.51975 -0.21525s0.21525 -0.32481250000000006 0.21525 -0.51975c0 -0.9651875 -0.19012500000000002 -1.9209999999999998 -0.5595 -2.8126875 -0.369375 -0.89175 -0.9106875000000001 -1.702 -1.5932499999999998 -2.3845625 -0.6825000000000001 -0.6825000000000001 -1.49275 -1.223875 -2.3845625 -1.5932499999999998C9.421000000000001 0.340125 8.465187499999999 0.15 7.5 0.15Z"
+              fill="#ffffff"
+              stroke-width="1"
+            ></path>
+          </svg>
+        </div>
+        <div class="lg:flex">
+          <div class="flex gap-2 items-end">
+            <span class="text-5xl text-white mt-1">2630.</span>
+            <span class="text-5xl text-[#648CFF] mt-1">062000</span>
+            <div>
+              <img src="images/currency.png" alt="currency" />
+            </div>
+          </div>
+          <!-- buttons -->
+          <form class="lg:ms-72 text-[#3038E5] mt-8 lg:mt-0">
+            <button
+              class="bg-white p-2 text-[10px] rounded-xl w-[220px] lg:w-24"
+            >
+              New Payment
+            </button>
+            <button
+              class="bg-white p-2 text-[10px] rounded-xl ms-10 lg:ms-0 w-[220px] lg:w-24"
+            >
+              New Request
+            </button>
+          </form>
+        </div>
+        <div
+          class="mt-[82px] w-[90%] h-auto bg-white rounded-tl-xl text-[#1E2240] rounded-tr-xl"
+        >
+          <!-- Transactions  -->
+          <div class="flex px-5 py-2 gap-2">
+            <div><i class="bx bx-qr-scan text-[#969AF1] text-3xl"></i></div>
+            <p>Transactions</p>
+          </div>
+          <div
+            class="flex w-[90%] ms-5 p-2"
+            style="border-bottom: 1px solid #00000038"
+          >
+            <div class="flex">
+              <div class="">
+                <div class="flex">
+                  <span>7 500.</span>
+                  <span class="text-[#9397B3]">062000</span>
+                  <div>
+                    <img
+                      src="images/currency.png"
+                      alt="currency"
+                      class="w-3 ms-1"
+                    />
+                  </div>
+                </div>
+                <span class="text-[11px]"
+                  >TO: AACNGXR76IGUU3FAINLZDWXFFN7UGW</span
+                >
+              </div>
+            </div>
+            <div class="ms-[363px]">
+              <div class="flex gap-2">
+                <div
+                  class="flex w-7 h-7 rounded-xl bg-[#E2DDFF] justify-center items-center"
+                >
+                  <i class="bx bx-chevron-up text-[#4C30E5] text-xl"></i>
+                </div>
+                <p>Request sent</p>
+              </div>
+              <p class="text-[11px] ms-9">22 NOV, 2:34PM</p>
+            </div>
+          </div>
+          <div class="flex w-[90%] ms-5 p-2 border-b border-[#00000038]">
+            <div class="">
+              <div class="flex">
+                <span>13200.</span>
+                <span class="text-[#9397B3]">062000</span>
+                <div>
+                  <img
+                    src="images/currency.png"
+                    alt="currency"
+                    class="w-3 ms-1"
+                  />
+                </div>
+              </div>
+              <span class="text-[11px]">TO: JIMMIE GARDNERS</span>
+            </div>
+            <div class="ms-[465px]">
+              <div class="flex gap-2">
+                <div
+                  class="flex w-7 h-7 rounded-xl bg-[#E2DDFF] justify-center items-center"
+                >
+                  <i class="bx bx-chevron-up text-[#4C30E5] text-xl"></i>
+                </div>
+                <p>Request sent</p>
+              </div>
+              <p class="text-[11px] ms-9">22 NOV, 2:34PM</p>
+            </div>
+          </div>
+          <div class="flex w-[90%] ms-5 p-2 border-b border-[#00000038]">
+            <div class="">
+              <div class="flex">
+                <span>15200.</span>
+                <span class="text-[#9397B3]">062000</span>
+                <div>
+                  <img
+                    src="images/currency.png"
+                    alt="currency"
+                    class="w-3 ms-1"
+                  />
+                </div>
+              </div>
+              <span class="text-[11px]">TO: MARY STEWARD</span>
+            </div>
+            <div class="ms-[440px]">
+              <div class="flex gap-2">
+                <div
+                  class="flex w-7 h-7 rounded-xl bg-[#E0F5D0] justify-center items-center"
+                >
+                  <i class="bx bx-chevron-down text-[#5CB816] text-xl"></i>
+                </div>
+                <p>Money received</p>
+              </div>
+              <p class="text-[11px] ms-9">22 NOV, 2:34PM</p>
+            </div>
+          </div>
+          <div class="flex w-[90%] ms-5 p-2 border-b border-[#00000038]">
+            <div class="">
+              <div class="flex">
+                <span>4800.</span>
+                <span>062000</span>
+                <div>
+                  <img
+                    src="images/currency.png"
+                    alt="currency"
+                    class="w-3 ms-1"
+                  />
+                </div>
+              </div>
+              <span class="text-[11px]"
+                >TO: AACNGXRRHRTHRTHRT335HUYKYUTHC4</span
+              >
+            </div>
+            <div class="ms-[360px]">
+              <div class="flex gap-2">
+                <div
+                  class="flex w-7 h-7 rounded-xl bg-[#F3E5E3] justify-center items-center"
+                >
+                  <i class="bx bx-x text-[#E54930] text-xl"></i>
+                </div>
+                <p>Failed</p>
+              </div>
+              <p class="text-[11px] ms-9">22 NOV, 2:34PM</p>
+            </div>
+          </div>
+          <div class="flex p-2">
+            <div class="px-5">
+              <div class="flex">
+                <span>7 500.</span>
+                <span class="text-[#9397B3]">062000</span>
+                <div>
+                  <img
+                    src="images/currency.png"
+                    alt="currency"
+                    class="w-3 ms-1"
+                  />
+                </div>
+              </div>
+              <span class="text-[11px]">TO: JIMMIE GARDNERS</span>
+            </div>
+            <div class="ms-[450px]">
+              <div class="flex gap-2">
+                <div
+                  class="flex w-7 h-7 rounded-xl bg-[#E0F5D0] justify-center items-center"
+                >
+                  <i class="bx bx-chevron-down text-[#5CB816] text-xl"></i>
+                </div>
+                <p>Money received</p>
+              </div>
+              <p class="text-[11px] ms-9">22 NOV, 2:34PM</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Notification Message -->
+      <div
+        class="me-2 w-[16%] lg:w-9 lg:h-9 bg-blue-600 flex justify-center rounded-xl items-center relative top-[550px]"
+      >
+        <svg
+          class="w-16 h-16"
+          viewBox="-0.5 -0.5 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          id="Bell--Streamline-Unicons"
+          height="24"
+          width="24"
+        >
+          <desc>Bell Streamline Icon: https://streamlinehq.com</desc>
+          <path
+            d="M11.9208125 8.3875V6.044437499999999c-0.001 -1.0439375 -0.37150000000000005 -2.053875 -1.0458125 -2.850875 -0.67425 -0.7969999999999999 -1.6088125 -1.329625 -2.6381875 -1.503625v-0.803125c0 -0.1954375 -0.07768749999999999 -0.3828125 -0.2158125 -0.521C7.882875 0.22762500000000002 7.695375 0.15 7.5 0.15s-0.3828125 0.077625 -0.521 0.2158125c-0.138125 0.1381875 -0.2158125 0.32556250000000003 -0.2158125 0.521v0.803125C5.733812499999999 1.8639375 4.79925 2.3965625 4.125 3.1935625 3.4506875 3.9905625000000002 3.08025 5.0005 3.0791875 6.044437499999999V8.3875c-0.42999999999999994 0.152 -0.8023750000000001 0.4333125 -1.0661875 0.80525 -0.263875 0.372 -0.40618750000000003 0.8165 -0.4074375 1.2725v1.4736250000000002c0 0.1954375 0.077625 0.382875 0.2158125 0.521 0.1381875 0.138125 0.32556250000000003 0.2158125 0.521 0.2158125h2.3135625c0.16968750000000002 0.624375 0.5400625 1.1755 1.0540625000000001 1.5684375 0.514 0.393 1.143 0.605875 1.79 0.605875s1.2759999999999998 -0.212875 1.79 -0.605875c0.514 -0.39293750000000005 0.884375 -0.9440625 1.0540625000000001 -1.5684375h2.3135625c0.1954375 0 0.382875 -0.077625 0.521 -0.2158125s0.2158125 -0.32556250000000003 0.2158125 -0.521v-1.4736250000000002c-0.00125 -0.456 -0.143625 -0.9005000000000001 -0.40737500000000004 -1.2725 -0.263875 -0.3719375 -0.6363125000000001 -0.6532499999999999 -1.06625 -0.80525ZM4.5528125 6.044437499999999c0 -0.781625 0.3105 -1.5313124999999999 0.8631875 -2.084 0.5526875 -0.5526875 1.3023125 -0.8631875 2.084 -0.8631875s1.5313124999999999 0.3105 2.084 0.8631875c0.55275 0.5526875 0.86325 1.302375 0.86325 2.084v2.2104375000000003H4.5528125V6.044437499999999ZM7.5 13.412500000000001c-0.257125 -0.0015625 -0.5094375 -0.07037500000000001 -0.7318125 -0.199625 -0.22225 -0.1293125 -0.4069375 -0.3144375 -0.5355 -0.5371875h2.5346249999999997c-0.1285625 0.22275 -0.31325 0.407875 -0.5355 0.5371875 -0.222375 0.12925 -0.4746875 0.1980625 -0.7318125 0.199625Zm4.4208125 -2.2104375000000003H3.0791875v-0.7368125000000001c0 -0.195375 0.077625 -0.3828125 0.2158125 -0.521 0.138125 -0.138125 0.32556250000000003 -0.2158125 0.521 -0.2158125h7.368c0.1954375 0 0.382875 0.07768749999999999 0.521 0.2158125s0.2158125 0.325625 0.2158125 0.521v0.7368125000000001Z"
+            fill="#ffffff"
+            stroke-width="1"
+          ></path>
+        </svg>
+      </div>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
