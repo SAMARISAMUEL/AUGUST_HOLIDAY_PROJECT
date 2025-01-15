@@ -1,0 +1,149 @@
+User icon
+<i class="bx bxs-user-circle" style="color: #9397b3"></i>
+
+Key icon
+ <i class="bx bxs-key" style="color: #9397b3"></i>
+
+
+Right chevron
+<i class='bx bx-chevron-right' style='color:#3038e5'  ></i>
+
+Left arrow
+Down arrow
+Up arrow
+Reset icon
+x icon
+notification icon
+Smartphone icon
+Person book
+Support
+Account balance
+Share window
+Wallet
+search icon
+
+
+<!--  My transactions page -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+
+    <!-- Google fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=person"
+    />
+
+    <!-- Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+  </head>
+
+  <body class="">
+    <!-- Left side -->
+    <section class="">
+      <!-- logo -->
+      <div class="bg-black">
+        <img
+          src="../crypto_img/whitelogo.png"
+          alt="Dagcoin logo"
+          width="173px"
+          height="56px"
+        />
+      </div>
+
+      <!-- Menu items -->
+      <div>
+        <!-- Home -->
+        <div class="flex items-center space-x-2 my-2">
+          <i class="bx bxs-home-alt-2" style="color: #648cff"></i>
+          <p class="capitalize">home</p>
+        </div>
+
+        <!-- Transaction -->
+        <div class="flex items-center space-x-2 my-2">
+          <i class="bx bx-list-ul" style="color: #648cff"></i>
+          <p class="capitalize text-cryp_muted_blue">transaction</p>
+        </div>
+
+        <!-- Address book -->
+        <div class="flex items-center space-x-2 my-2">
+          <i class="bx bxs-user-pin" style="color: #648cff"></i>
+          <p class="capitalize">address book</p>
+        </div>
+
+        <!-- Share profile -->
+        <div class="flex items-center space-x-2 my-2">
+          <i class="bx bxs-share-alt" style="color: #648cff"></i>
+          <p class="">Share my profile</p>
+        </div>
+
+        <!-- Get coins -->
+        <div class="flex items-center space-x-2 my-2">
+          <i class="bx bxs-coin-stack" style="color: #648cff"></i>
+          <p class="capitalize">get coins</p>
+        </div>
+
+        <!-- ATM loyalty -->
+        <div class="flex items-center space-x-2 my-2">
+          <i class="bx bxs-bank" style="color: #648cff"></i>
+          <p class="capitalize">ATM loyalty</p>
+        </div>
+
+        <!-- Merchant finder -->
+        <div class="flex items-center space-x-2 my-2">
+          <img
+            src="../crypto_img/blue_clipboard.png"
+            alt="merchant finder"
+            width="26px"
+            height="26px"
+          />
+          <p class="capitalize">merchant finder</p>
+        </div>
+
+        <!-- Customer support -->
+        <div class="flex items-center space-x-2 my-2">
+          <i class="bx bx-support" style="color: #648cff"></i>
+          <p>customer support</p>
+        </div>
+      </div>
+
+      <!-- henry's wallet -->
+      <div class="flex items-center bg-cryp_muted_white">
+        <div class="flex items-center">
+          <i class="bx bx-wallet" style="color: #648cff"></i>
+          <p>henry's wallet</p>
+        </div>
+        <!-- chevron-up -->
+        <div>
+          <i class="bx bx-chevron-up" style="color: #000"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- Right side -->
+    <section class="">
+      <!-- Top  -->
+      <div>
+        <!-- left arrow -->
+        <span>
+          <i class="bx bx-left-arrow-alt" style="color: #ffffff"></i>
+        </span>
+        <h1 class="text-red-700">transaction</h1>
+
+        <span><i class="bx bx-slider-alt" style="color: #ffffff"></i></span>
+      </div>
+
+      <div></div>
+      <div></div>
+    </section>
+  </body>
+</html>
+
+
