@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MAIN PAGE</title>
+    <link href="output.css" rel="stylesheet" />
+    <!-- animation link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+
+  <body class="bg-btn_hover_bg bg-cover">
+    <!-- circular background -->
+    <div
+      class="bg-color1 w-[600px] h-[600px] lg:m-auto relative md:left-20 lg:left-0 right-[4rem] border border-[#ffffff0a] md:right-12 lg:right-0 lg:bottom-32 rounded-full"
+    >
+      <div
+        class="bg-color2 w-[500px] h-[500px] m-auto relative top-[9%] rounded-full"
+        <div
+        class="bg-color3 w-[300px] h-[300px] m-auto relative top-14 rounded-full"
+      >
+        <!-- Dagcoin Logo -->
+        <h1
+          class="text-white text-4xl lg:text-[14px] font-bold italic ms-20 lg:ms-28 lg:py-2"
+          data-aos="fade-right"
+        >
+          DAGCOIN
+        </h1>
+        <div
+          class="bg-color3 w-[200px] h-[200px] m-auto relative top-4 rounded-full"
+        ></div>
+      </div>
+    </div>
+    <div>
+      <!-- wallet image -->
+      <img
+        src="images/Group 4.png"
+        alt="Wallet image"
+        class="relative w-32 h-auto left-[170px] md:left-[320px] bottom-[350px] lg:bottom-[500px] lg:left-[600px]"
+        data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000"
+      />
+    </div>
+    <div class="relative bottom-[250px] lg:bottom-[450px]">
+      <!-- welcome text -->
+      <p
+        class="text-color4 mb-10 lg:mb-0 relative top-20 lg:top-0 left-[120px] md:left-[270px] lg:left-[570px]"
+      >
+        Welcome to your digital wallet
+      </p>
+      <form
+        class="w-full lg:w-36 relative left-[50px] lg:left-[500px] top-20 lg:top-9"
+      >
+        <!-- login and signup buttons -->
+        <button
+          class="bg-btn_bg text-white w-[80%] md:w-[80%] lg:w-80 border border-[#ffffff0a] py-3 lg:py-[10px] px-10 lg:px-4 rounded-2xl hover:bg-btn_hover_bg mb-4 lg:mb-2"
+          data-aos="zoom-in-left"
+          data-aos-duration="1500"
+        >
+          Log In
+        </button>
+        <button
+          class="bg-btn_bg text-white w-[80%] md:w-[80%] lg:w-80 py-3 border border-[#ffffff0a] lg:py-[10px] px-10 rounded-2xl hover:bg-btn_hover_bg"
+          data-aos="zoom-in-right"
+          data-aos-duration="1500"
+        >
+          Sign Up
+        </button>
+      </form>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
