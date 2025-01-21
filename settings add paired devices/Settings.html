@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings Paired Add Device</title>
+    <link rel="stylesheet" href="../output.css">
+    <!-- Boxicons CDN Link -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <!-- AOS cdn  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+                screens: {
+        // Custom height based breakpoints
+        "h-sm": { raw: "(max-height: 640px)" },
+        "h-md": { raw: "(max-height: 909px)" },
+        "h-lg": { raw: "(min-height: 910px)" },
+      },
+            }
+          }
+        }
+      </script>
+</head>
+
+<body class="overflow-x-hidden bg-[#fff] h-fit">
+    <section class="bg-[#ffff]">
+        <nav class="flex justify-between bg-[#1e2240] lg:bg-transparent relative">
+            <div class=" lg:flex items-center fixed top-0 left-0 z-0 transition-all duration-1000 translate-x-[-100%] lg:translate-x-0"
+                id="leftNave">
+                <!-- Logo  -->
+                <div class="hidden lg:block" id="logoDiv">
+                    <a href="#" class="absolute z-10 top-4 left-4">
+                        <img src="./image/ON.svg" alt="Logo">
+                    </a>
+                    <a href="#" class="absolute z-10 top-8 left-24">
+                        <img src="./image/navLogo.svg" alt="Logo" class="navLogo">
+                    </a>
+                </div>
+
+                <!-- Left nav  -->
+                <div class="bg-[#2027c6] p-5 lg:h-[100vh] h-[100%]  flex flex-col justify-between w-[300px]" id="leftNavDiv">
+                    <!-- Logo  -->
+                    <a href="#" class="lg:hidden">
+                        <img src="./image/tra-Logo.svg" alt="Logo">
+                    </a>
+                    <!-- Menu  -->
+                    <div class="flex items-center gap-8 lg:my-32 md:my-20 my-10 ">
+                        <!-- Menu Items -->
+                        <ul class="flex flex-col gap-5">
+                            <!-- Home  -->
+                            <li class="flex gap-5 items-center">
+                                <!-- icon  -->
+                                <img src="./image/phone-toolbar.svg" alt="phone-toolbar">
+                                <!-- Text  -->
+                                <a href="#" class="text-white  navItems ">Home</a>
+                            </li>
+                            <!-- Transactions  -->
+                            <li
+                                class="flex gap-5 items-center transition-all duration-300 hover:translate-y-[-2px] hover:font-bold hover:scale-105">
+                                <!-- icon  -->
+                                <img src="./image/transaction-icn.svg" alt="Transactions">
+                                <!-- Text  -->
+                                <a href="#" class="text-[#648cff]  navItems  ">Transactions</a>
+                            </li>
+                            <!-- Address Book  -->
+                            <li
+                                class="flex gap-5 items-center transition-all duration-300 hover:translate-y-[-2px] hover:font-bold hover:scale-105">
+                                <!-- icon  -->
+                                <img src="./image/user-icn.svg" alt="Address Book">
+                                <!-- Text  -->
+                                <a href="#" class="text-[#648cff]   navItems ">Address Book</a>
+                            </li>
+                            <!-- Share my Profile  -->
+                            <li
+                                class="flex gap-5 items-center transition-all duration-300 hover:translate-y-[-2px] hover:font-bold hover:scale-105">
+                                <!-- icon  -->
+                                <img src="./image/share-icn.svg" alt="Share my Profile">
+                                <!-- Text  -->
+                                <a href="#" class="text-[#648cff]  navItems  ">Share my Profile</a>
+                            </li>
+                            <!-- Get Coins -->
+                            <li
+                                class="flex gap-5 items-center transition-all duration-300 hover:translate-y-[-2px] hover:font-bold hover:scale-105">
+                                <!-- icon  -->
+                                <img src="./image/get-icn.svg" alt="Get Coins">
+                                <!-- Text  -->
+                                <a href="#" class="text-[#648cff]   navItems ">Get Coins</a>
+                            </li>
+                            <!-- ATM Loyalty  -->
+                            <li
+                                class="flex gap-5 items-center transition-all duration-300 hover:translate-y-[-2px] hover:font-bold hover:scale-105">
+                                <!-- icon  -->
+                                <img src="./image/Light blue.svg" alt="ATM Loyalty">
+                                <!-- Text  -->
+                                <a href="#" class="text-[#648cff]   navItems ">ATM Loyalty</a>
+                            </li>
+                            <!-- Merchant finder  -->
+                            <li
+                                class="flex gap-5 items-center transition-all duration-300 hover:translate-y-[-2px] hover:font-bold hover:scale-105">
+                                <!-- icon  -->
+                                <img src="./image/Light bluedol.svg" alt="Merchant finder">
+                                <!-- Text  -->
+                                <a href="#" class="text-[#648cff]  navItems  ">Merchant finder</a>
+                            </li>
+                            <!-- Customer support  -->
+                            <li
+                                class="flex gap-5 items-center transition-all duration-300 hover:translate-y-[-2px] hover:font-bold hover:scale-105">
+                                <!-- icon  -->
+                                <img src="./image/Vector.svg" alt="Customer support">
+                                <!-- Text  -->
+                                <a href="#" class="text-[#648cff]  navItems  ">Customer support</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Active Wallet  -->
+                    <div class="h-md:absolute h-md:bottom-0">
+                        <div class="hidden mb-10 h-md: lg:flex relative  flex-col p-5 bg-[#1e2240] w-[250px] h-[270px] rounded-[20px]"
+                            id="walletBox">
+                            <h3 class="text-white  walletSection text-[16px] my-5">Wallets</h3>
+                            <button type="button" title="Wallets" id="toggleBtn"
+                                class="bx bx-chevron-down collap absolute right-5 top-2 translate-y-[30px]  text-white text-[24px] focus:outline-none transition-all  duration-300 hover:scale-150"></button>
+                            <div class=" grid grid-cols-1 gap-6">
+                                <div
+                                    class="flex items-center gap-4 hover:bg-[#FFFFFF20] rounded-[3px] h-[42px] cursor-pointer transition-all duration-300">
+                                    <img src="./image/Change Icon Copy 3.svg" alt="Wallet icon">
+                                    <div class="flex flex-col  gap-0 collap">
+                                        <p class="text-text-grey text-[12px]">Active</p>
+                                        <p class="text-white text-[16px]">Henry’s Wallet</p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex walletSection items-center gap-4 hover:bg-[#FFFFFF20] h-[42px] rounded-[3px] cursor-pointer transition-all duration-300">
+                                    <img src="./image/wallet-icn.svg" alt="Wallet icon">
+                                    <div class="flex flex-col gap-0">
+                                        <p class="text-[#648cff] text-[16px]">Business Wallet</p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex walletSection items-center gap-4 hover:bg-[#FFFFFF20] h-[42px] rounded-[3px] cursor-pointer transition-all duration-300">
+                                    <img src="./image/add-icn.svg" alt="Wallet icon">
+                                    <div class="flex flex-col gap-0">
+                                        <p class="text-[#648cff] text-[16px]">Add New Wallet</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Chevron -->
+                <button title="Hide" type="button" id="chevron"
+                    class="hidden lg:flex focus:outline-none translate-x-[-100%] w-[28px] h-[64px] bg-[#3038e5] rounded-l-[100%] p-3 items-center justify-center">
+                    <i
+                        class="bx bx-chevron-left text-2xl text-white transition-all duration-300 hover:scale-75 translate-x-[4px] hover:translate-x-[-1px]"></i>
+                </button>
+                <button title="Show" type="button" id="chevronx"
+                    class="hidden focus:outline-none translate-x-[-100%] w-[28px] h-[64px] bg-[#3038e5] rounded-l-[100%] p-4 items-center justify-center">
+                    <i
+                        class="bx bx-chevron-right text-2xl text-white transition-all duration-300 hover:scale-75 translate-x-[0px] hover:translate-x-[4px]"></i>
+                </button>
+            </div>
+            <!-- Logo  -->
+            <div class="lg:hidden p-5" id="Logo">
+                <a href="#">
+                    <img src="./image/DAG-icn.svg" alt="Logo" class="bg-white p-3 ">
+                </a>
+            </div>
+            <!-- Menu icon  -->
+            <div class="p-5 flex lg:hidden ml-auto z-50">
+                <div class="flex" id="menu-icon">
+                    <button title="Menu"
+                        class="bx bx-menu text-2xl sm:text-3xl bg-white w-8 sm:w-10 h-8 sm:h-10 ring-1 ring-white flex items-center justify-center rounded-full"></button>
+                </div>
+                <div class="hidden" id="closeMenu">
+                    <button title="Menu"
+                        class="bx bx-x text-2xl sm:text-3xl w-8 sm:w-10 h-8 sm:h-10 flex bg-white text-black ring-1 ring-white  items-center justify-center rounded-full"></button>
+                </div>
+            </div>
+        </nav>
+        <!-- Main content -->
+        <div
+            class=" bg-[#fff] lg:w-[80%] xl:w-[85%] ml-auto lg:px-32 rounded-[20px] transition-all duration-300 mainContent">
+            <div class="text-center">
+                <h1 class="text-3xl mb-14 lg:mt-16 tracking-wider">
+                  Security Settings
+                </h1>
+                <div class="flex flex-col items-center">
+                  <div class="p-4 mb-6">
+                    <img src="./image/avatar-icn.svg" alt="" />
+                  </div>
+                  <ul class="">
+                    <li class="flex items-center justify-between w-96">
+                      <span class="w-64 border-t border-gray-200 flex justify-start"
+                        ><p class=" py-8">Set Password</p></span
+                      >
+                      <img src="./image/Switch.svg" alt="" class="w-14" />
+                    </li>
+                    <li class="flex items-center justify-between w-96">
+                      <span class="w-64 border-t border-gray-200 flex justify-start"
+                        ><p class=" py-8">Set Facial Recognition</p></span
+                      >
+                      <img src="./image/Switch (1).svg" alt="" class="w-12 ms-4" />
+                    </li>
+                    <li class="flex items-center justify-between w-96">
+                      <div
+                        class="w-64 border-t border-b py-8 border-gray-200 flex flex-col"
+                        >
+                        <p class="text-start pb-2">Allow Access to QR Code</p
+                        ><p class="text-[10px] w-40 text-start"
+                          >Get QR code to receive coins without authentication</p
+                        >
+                      </div>
+                      <img src="./image/Switch (2).svg" alt="" class="w-14" />
+                    </li>
+                    
+                  </ul>
+                </div>
+              </div>
+            <!-- Notification  -->
+            <div class="hidden lg:flex transition-all fixed bottom-4 right-5 flex justify-end" >
+                <img src="./image/Notifications.svg" alt="Notification">
+            </div>
+        </div>
+    </section>
+    <script>
+        // Menu toggle
+        const menuIcon = document.getElementById('menu-icon');
+        const closeMenu = document.getElementById('closeMenu');
+        const leftNave = document.getElementById('leftNave');
+        const chevron = document.getElementById('chevron');
+        const chevronx = document.getElementById('chevronx');
+        const leftNavDiv = document.getElementById('leftNavDiv');
+        const navItem = document.querySelectorAll('.navItems');
+        const navLogo = document.querySelectorAll('.navLogo');
+        const collap = document.querySelectorAll('.collap');
+        const logoDiv = document.getElementById('logoDiv');
+        const Logo = document.getElementById('Logo');
+        const mainContent = document.querySelectorAll('.mainContent');
+        const stick = document.querySelectorAll('.stick');
+        const emtDiv = document.createElement('div');
+
+
+
+        // page reload when clicking on logo with delay
+        logoDiv.addEventListener('click', () => {
+            setTimeout(() => {
+                location.reload();
+            }, 300);
+        })
+        Logo.addEventListener('click', () => {
+            setTimeout(() => {
+                location.reload();
+            }, 300);
+        })
+
+        // Menu toggle
+        menuIcon.addEventListener('click', () => {
+            menuIcon.classList.add('hidden');
+            closeMenu.classList.remove('hidden');
+            leftNave.classList.remove('hidden');
+            leftNave.className = 'flex flex-col items-start absolute top-0 left-0 z-0 transition-all duration-300';
+            document.body.classList.add('opacity-100');
+            stick.forEach(item => {
+                item.classList.add('z-[-1]');
+            });
+        });
+
+        closeMenu.addEventListener('click', () => {
+            menuIcon.classList.remove('hidden');
+            closeMenu.classList.add('hidden');
+            leftNave.classList.add('hidden');
+            leftNave.className = 'flex flex-col items-start absolute top-0 left-0 z-0 transition-all duration-300 translate-x-[-100%]';
+            document.body.classList.remove('opacity-100');
+            setTimeout(() => {
+                stick.forEach(item => {
+                    item.classList.remove('z-[-1]');
+                });
+            }, 500);
+        });
+
+        function toggleWallets() {
+            walletsSection.forEach(section => {
+                section.classList.toggle('hidden');
+                toggleBtn.classList.toggle('bx-chevron-up');
+                toggleBtn.classList.toggle('bx-chevron-down');
+            });
+            walletBox.classList.toggle('h-[270px]');
+
+        };
+
+        // Toggle wallets on click
+        document.addEventListener("DOMContentLoaded", () => {
+            toggleWallets();
+        });
+
+        // Chevron click event to hide
+        chevron.addEventListener('click', () => {
+            navItem.forEach(item => {
+                item.classList.add('hidden');
+            });
+            leftNavDiv.classList.remove('w-[300px]');
+            leftNavDiv.classList.add('w-[80px]', 'duration-300');
+            navLogo.forEach(logo => {
+                logo.classList.add('hidden');
+            });
+            chevron.classList.remove('lg:flex');
+            chevronx.classList.add('lg:flex');
+            toggleWallets();
+            walletBox.classList.remove('lg:flex');
+            if (!walletBox.classList.contains('h-[270px]')) {
+                emtDiv.classList.add('h-[270px]');
+                emtDiv.classList.remove('h-[82px]');
+            }
+            else if (walletBox.classList.contains('h-[270px]')) {
+                emtDiv.classList.remove('h-[270px]');
+                emtDiv.classList.add('h-[82px]');
+            }
+            leftNavDiv.appendChild(emtDiv);
+
+            mainContent.forEach(item => {
+                item.classList.add('w-full');
+                item.classList.remove('xl:w-[85%]');
+                item.classList.remove('lg:w-[80%]');
+
+            });
+
+        });
+
+        // Chevron click event to show
+        chevronx.addEventListener('click', () => {
+            navItem.forEach(item => {
+                // adding delay for animation
+                setTimeout(() => {
+                    item.classList.remove('hidden');
+                }, 200);
+            });
+            leftNavDiv.classList.remove('w-[80px]');
+            leftNavDiv.classList.add('w-[300px]', 'duration-300');
+            navLogo.forEach(logo => {
+                logo.classList.remove('hidden');
+            });
+            chevron.classList.add('lg:flex');
+            chevronx.classList.remove('lg:flex');
+            toggleWallets();
+            setTimeout(() => {
+                walletBox.classList.add('lg:flex');
+            }, 300);
+
+            setTimeout(() => {
+                leftNavDiv.removeChild(emtDiv);
+            }, 300);
+
+            mainContent.forEach(item => {
+                item.classList.remove('w-full');
+                item.classList.add('lg:w-[80%]');
+                item.classList.add('xl:w-[85%]');
+            });
+        });
+
+        // Hover effect on navigation items
+        navItem.forEach(item => {
+            item.addEventListener('mouseenter', () => {
+                item.classList.add('hover:text-white/50');
+            });
+            item.addEventListener('mouseleave', () => {
+                item.classList.remove('hover:text-white');
+            });
+        });
+
+        // Active wallet collapse
+        const toggleBtn = document.getElementById('toggleBtn');
+        const walletsSection = document.querySelectorAll('.walletSection');
+        const walletBox = document.getElementById('walletBox');
+
+
+        toggleBtn.addEventListener('click', () => {
+            toggleWallets();
+        });
+
+    </script>
+    <!-- AOS - animated on scroll library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
